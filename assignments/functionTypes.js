@@ -41,7 +41,28 @@ convertToString(21); // "21"
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
- */
+ */      
+ //Function Decleration
+
+ function param(n) {
+ 	return (++n);
+ }
+
+// Function Expression
+
+let param=function (n) {
+	return (++n);
+}
+
+// Arrow Function
+
+let param= n => (++n);
+
+// Arrow Function With Curly Bracket
+
+let param = n => {
+  return (++n);
+};
 
 /**
  * Subtracts one from a given number.
@@ -49,12 +70,55 @@ convertToString(21); // "21"
  * @return {number}
  */
 
+  //Function Decleration
+
+ function param(n) {
+ 	return (--n);
+ }
+
+// Function Expression
+
+let param=function (n) {
+	return (--n);
+}
+
+// Arrow Function
+
+let param= n => (--n);
+
+// Arrow Function With Curly Bracket
+
+let param = n => {
+  return (--n);
+}
+ 
 /**
  * Adds two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the sum
  */
+  //Function Decleration
+
+ function param(x,y) {
+ 	return (x+y);
+ }
+
+// Function Expression
+
+let param=function (x,y) {
+	return (x+y);
+}
+
+// Arrow Function
+
+let param= (x,y) => (x+y);
+
+// Arrow Function With Curly Bracket
+
+let param = (x,y) => {
+  return (x+y);
+}
 
 /**
  * Subtracts the second number from the first.
@@ -62,6 +126,27 @@ convertToString(21); // "21"
  * @param {number} y
  * @return {number} the difference
  */
+  //Function Decleration
+
+ function param(x,y) {
+ 	return (y-x);
+ }
+
+// Function Expression
+
+let param=function (x,y) {
+	return (y-x);
+}
+
+// Arrow Function
+
+let param= (x,y) => (y-x);
+
+// Arrow Function With Curly Bracket
+
+let param = (x,y) => {
+  return (y-x);
+}
 
 /**
  * Multiplies two numbers.
@@ -69,6 +154,27 @@ convertToString(21); // "21"
  * @param {number} y
  * @return {number} the product
  */
+  //Function Decleration
+
+ function param(x,y) {
+ 	return (x*y);
+ }
+
+// Function Expression
+
+let param=function (x,y) {
+	return (x*y);
+}
+
+// Arrow Function
+
+let param= (x,y) => (x*y);
+
+// Arrow Function With Curly Bracket
+
+let param = (x,y) => {
+  return (x*y);
+}
 
 /**
  * Divides the first number by the second.
@@ -76,12 +182,56 @@ convertToString(21); // "21"
  * @param {number} y
  * @return {number} the quotient
  */
+   //Function Decleration
+
+ function param(x,y) {
+ 	return (x/y);
+ }
+
+// Function Expression
+
+let param=function (x,y) {
+	return (x/y);
+}
+
+// Arrow Function
+
+let param= (x,y) => (x/y);
+
+// Arrow Function With Curly Bracket
+
+let param = (x,y) => {
+  return (x/y);
+}
+
+ 
 
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
+  //Function Decleration
+
+ function param(x) {
+ 	return (x*x);
+ }
+
+// Function Expression
+
+let param=function (x) {
+	return (x*x);
+}
+
+// Arrow Function
+
+let param= x=> (x*x);
+
+// Arrow Function With Curly Bracket
+
+let param = x => {
+  return (x*x);
+}
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -91,20 +241,91 @@ convertToString(21); // "21"
  * @param {number} y
  * @return {number} the result
  */
+ function param(x,y,operation) {
+ 	if(operation=="+"){
+ 		return x+y;
+ 	}
+ 	else if(operation=="-"){
+ 		return x-y;
+ 	}
+ 	else if(operation=="*"){
+ 		return x*y;
+ 	}
+ 	else if(operation=="/"){
+ 		return x/y;
+ 	}
 
+ 	
+ }
+ 	
+// Function Expression
+var param = function(x,y,operation) {
+	if(operation=="+") {
+		return (x+y);
+	}
+	else if(operation=="-") {
+		return (x-y);
+	}
+	else if(operation=="*") {
+		return (x*y);
+	}
+	else if(operation=="/") {
+		return (x/y);
+	}
+
+}
+//Arrow Function With Curly Braces
+var param = (x,y,operation) => {
+	if(operation=="+") {
+		return (x+y);
+	}
+	else if(operation=="-") {
+		return (x-y);
+	}
+	else if(operation=="*") {
+		return (x*y);
+	}
+	else if(operation=="/") {
+		return (x/y);
+	}
+
+}
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
+ function param(a,b) {
+ 	if(a>b){
+ 		return true;
+ 	}
+ }
+// Function Expression
+var param = function(a,b) {
+	if (a > b) {
+		return(true)
+	}
 
+}
+//Arrow Function With Curly Braces
+var param = (a,b) => {
+	if (a > b) {
+		return(true)
+	}
+
+}
 /**
  * Returns true if `a` is less than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
+ function param(a,b) {
+ 	if(a<b){
+ 		return true;
+ 	}
+ }
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -112,6 +333,11 @@ convertToString(21); // "21"
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
+ function param(a,b) {
+ 	if(a==b){
+ 		return true;
+ 	}
+ }
 
 /**
  * Returns the smallest value of two numbers.
@@ -119,6 +345,14 @@ convertToString(21); // "21"
  * @param {number} y
  * @return {number} the smallest number
  */
+ function param(x,y) {
+	if (x < y) {
+		return x;
+	}
+	else if ( y < x) {
+		return y;
+	}
+}
 
 /**
  * Returns the largest value of two numbers.
@@ -126,19 +360,36 @@ convertToString(21); // "21"
  * @param {number} y
  * @return {number} the largest number
  */
+function param(x,y) {
+	if (x > y) {
+		return x;
+	}
+	else if ( y > x) {
+		return y;
+	}
+}
 
 /**
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
+ function param(n) {
+ 	if(n%2==0){
+ 		return true;
+ 	}
+ }
 
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+function param(n) {
+	if(n%2==1){
+		return true;
+	}
+}
 /**
  * Returns a letter grade.
  * "A": 90-100%
@@ -150,6 +401,31 @@ convertToString(21); // "21"
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+function param(score,total) {
+ 	let percent=(score*100)/total
+ 	switch(true) { 
+ 	   case (percent <60):
+ 	   return "F";
+ 	   break;
+ 	   case (percent >=60 && percent <69):
+ 	   return "D";
+ 	   break;
+ 	   case (percent >=70 && percent <79):
+ 	   return "C";
+ 	   break;
+ 	   case (percent >=80 && percent <89):
+ 	   return "B";
+ 	   break;
+ 	   case (percent >=90 && percent <100):
+ 	   return "A";
+ 	   break;
+ 	   default:
+ 	   return "check again";
+ 	}
+}
+ 	   
+
+ 
 
 /**
  * Joins two strings with a space.
@@ -157,3 +433,28 @@ convertToString(21); // "21"
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+function param(word1,word2) {
+     return (word1+" "+word2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
