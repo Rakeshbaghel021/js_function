@@ -401,22 +401,30 @@ function param(n) {
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
- function param(score,total) {
- 	if((score/total)*100);
- 	switch(true);
- 	case:(score>100);
- 	     alert("excellent")
- 	 case:(score<90 && score>80)    
- 	     alert("A")
- 	 case:(score<80 && score>70)
- 	     alert("B")
- 	 case:(score<70 && score>60)
- 	     alert("C")
- 	 case:(score<60 && score>50)
- 	     alert("D")
- 	 case:(score<50)
- 	     alert("F")
+function param(score,total) {
+ 	let percent=(score*100)/total
+ 	switch(true) { 
+ 	   case (percent <60):
+ 	   return "F";
+ 	   break;
+ 	   case (percent >=60 && percent <69):
+ 	   return "D";
+ 	   break;
+ 	   case (percent >=70 && percent <79):
+ 	   return "C";
+ 	   break;
+ 	   case (percent >=80 && percent <89):
+ 	   return "B";
+ 	   break;
+ 	   case (percent >=90 && percent <100):
+ 	   return "A";
+ 	   break;
+ 	   default:
+ 	   return "check again";
  	}
+}
+ 	   
+
  
 
 /**
